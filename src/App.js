@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Hello from "./Component/Hello";
+import Form from "./Component/Form";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+    constructor(props) {
+        super();
+
+
+    }
+
+    render() {
+        return 
+            <Form></Form>
+        
+    }
+
 }
 
+/*
+constructor() {
+    super();
+    this.obj = {
+        name: "Ram",
+        age: 20,
+    };
+}
+
+render() {
+    return (
+        <div>
+            <Hello obj={this.obj}></Hello>
+
+        </div>
+    );
+}
+
+
+}
+
+*/
+
+/*
+import Form from "./Component/Form";
+
+const App = () => {
+    return (
+        <div> 
+            <div></div>
+          <Form></Form>
+            </div>
+    );
+
+};
+*/
+
 export default App;
+
+
+
